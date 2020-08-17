@@ -1,4 +1,4 @@
-build: off
+version: 1.0.{build}
 environment:
   global:
     REPO_DIR: lda
@@ -23,6 +23,8 @@ environment:
 matrix:
     fast_finish: true
 
+image: Visual Studio 2015
+build: off
 install:
     # Fetch submodules
     - git submodule update --init --recursive
